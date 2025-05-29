@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Bree Serif",
+    "Roboto";
+  background: #282828;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.stopwatch-container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+h1 {
+  font-family: "Roboto";
+}
+h3 {
+  font-family: "Roboto";
+}
+#display {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #333;
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 14px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#startBtn {
+  background: #4caf50;
+}
+#stopBtn {
+  background: #f44336;
+}
+#resetBtn {
+  background: #2196f3;
+}
+#resumeBtn {
+  background: #ff9800;
+}
+#lapBtn {
+  background: #9c27b0;
+}
+
+.hidden {
+  display: none;
+}
+
+#lapsContainer {
+  text-align: left;
+  margin-top: 20px;
+}
+
+#laps {
+  list-style: decimal inside;
+  font-size: 16px;
+  font-family: "Bree Serif";
+  font-weight: bold;
+  padding-left: 0;
+  color: #333;
+}
+
+@media (max-width: 500px) {
+  .stopwatch-container {
+    padding: 20px;
+  }
+
+  #display {
+    font-size: 36px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
+
+/* body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f0f0f0;
+  padding-top: 100px;
+}
+
+.stopwatch {
+  background: #fff;
+  display: inline-block;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#startBtn {
+  background-color: #4caf50;
+  color: white;
+}
+
+#stopBtn {
+  background-color: #f44336;
+  color: white;
+}
+
+#resetBtn {
+  background-color: #2196f3;
+  color: white;
+} */
