@@ -27,6 +27,7 @@ function start() {
     document.getElementById("startBtn").classList.add("hidden");
     document.getElementById("resumeBtn").classList.add("hidden");
     document.getElementById("stopBtn").classList.remove("hidden");
+    document.getElementById("lapBtn").classList.remove("hidden");
   }
 }
 
@@ -60,6 +61,7 @@ function reset() {
   updateDisplay();
 
   document.getElementById("laps").innerHTML = "";
+  document.getElementById("lapBtn").classList.add("hidden");
 
   // Reset buttons
   document.getElementById("startBtn").classList.remove("hidden");
